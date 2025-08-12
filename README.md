@@ -25,9 +25,9 @@
 </p>
 <br/>
 
-## Docs (WIP)
+## Documentation
 
-https://novel.sh/docs/introduction
+For detailed documentation and guides, visit our [documentation site](https://novel.sh/docs/introduction) (work in progress).
 
 ## Introduction
 
@@ -54,7 +54,7 @@ If you've deployed this to Vercel, you can also use [`vc env pull`](https://verc
 
 To run the app locally, you can run the following commands:
 
-```
+```bash
 pnpm i
 pnpm dev
 ```
@@ -63,12 +63,12 @@ pnpm dev
 
 While Novel is built for React, we also have a few community-maintained packages for non-React frameworks:
 
-- Svelte: https://novel.sh/svelte
-- Vue: https://novel.sh/vue
+- [Svelte](https://novel.sh/svelte)
+- [Vue](https://novel.sh/vue)
 
 ## VSCode Extension
 
-Thanks to @bennykok, Novel also has a VSCode Extension: https://novel.sh/vscode
+Thanks to @bennykok, Novel also has a [VSCode Extension](https://novel.sh/vscode).
 
 https://github.com/steven-tey/novel/assets/28986134/58ebf7e3-cdb3-43df-878b-119e304f7373
 
