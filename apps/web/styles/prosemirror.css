@@ -210,3 +210,92 @@ span[style] > strong {
 mark[style] > strong {
   color: inherit;
 }
+
+/* RTL Support Styles */
+.ProseMirror [dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+.ProseMirror [dir="ltr"] {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Auto-detected RTL content */
+.ProseMirror .rtl-auto-detected {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Hebrew font support */
+.ProseMirror [dir="rtl"],
+.ProseMirror .rtl-auto-detected {
+  font-family: "Noto Sans Hebrew", "Arial Hebrew", "Times New Roman", Arial, sans-serif;
+}
+
+/* RTL-specific list styling */
+.ProseMirror [dir="rtl"] ul,
+.ProseMirror [dir="rtl"] ol {
+  padding-right: 1.5rem;
+  padding-left: 0;
+}
+
+.ProseMirror [dir="rtl"] li {
+  text-align: right;
+}
+
+/* RTL blockquote styling */
+.ProseMirror [dir="rtl"] blockquote {
+  border-right: 4px solid hsl(var(--primary));
+  border-left: none;
+  padding-right: 1rem;
+  padding-left: 0;
+  margin-right: 0;
+}
+
+/* RTL task list styling */
+.ProseMirror [dir="rtl"] ul[data-type="taskList"] li {
+  flex-direction: row-reverse;
+}
+
+.ProseMirror [dir="rtl"] ul[data-type="taskList"] li > label {
+  margin-left: 0.2rem;
+  margin-right: 0;
+}
+
+/* RTL code block styling */
+.ProseMirror [dir="rtl"] pre {
+  direction: ltr; /* Keep code blocks LTR for readability */
+  text-align: left;
+}
+
+/* RTL table styling */
+.ProseMirror [dir="rtl"] table {
+  direction: rtl;
+}
+
+.ProseMirror [dir="rtl"] th,
+.ProseMirror [dir="rtl"] td {
+  text-align: right;
+}
+
+/* Document-level RTL support */
+.ProseMirror[dir="rtl"] {
+  direction: rtl;
+}
+
+.ProseMirror[dir="ltr"] {
+  direction: ltr;
+}
+
+/* Mixed content support - ensure LTR content in RTL context works properly */
+.ProseMirror [dir="rtl"] [dir="ltr"] {
+  direction: ltr;
+  text-align: left;
+}
+
+.ProseMirror [dir="ltr"] [dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}

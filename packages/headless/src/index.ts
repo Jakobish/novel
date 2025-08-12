@@ -41,6 +41,7 @@ export {
   Mathematics,
   CharacterCount,
   GlobalDragHandle,
+  RTLSupport,
   Command,
   renderItems,
   createSuggestionItems,

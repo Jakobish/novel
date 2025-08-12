@@ -10,6 +10,7 @@ import {
   MarkdownExtension,
   Mathematics,
   Placeholder,
+  RTLSupport,
   StarterKit,
   TaskItem,
   TaskList,
@@ -159,6 +160,12 @@ const markdownExtension = MarkdownExtension.configure({
   transformCopiedText: false,
 });
 
+const rtlSupport = RTLSupport.configure({
+  types: ['paragraph', 'heading', 'blockquote', 'listItem'],
+  autoDetect: true,
+  defaultDirection: 'ltr',
+});
+
 export const defaultExtensions = [
   starterKit,
   placeholder,
@@ -181,4 +188,5 @@ export const defaultExtensions = [
   Color,
   CustomKeymap,
   GlobalDragHandle,
+  rtlSupport,
 ];

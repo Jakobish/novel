@@ -21,6 +21,7 @@ import { ColorSelector } from "./selectors/color-selector";
 import { LinkSelector } from "./selectors/link-selector";
 import { MathSelector } from "./selectors/math-selector";
 import { NodeSelector } from "./selectors/node-selector";
+import { RTLSelector } from "./selectors/rtl-selector";
 import { Separator } from "./ui/separator";
 
 import GenerativeMenuSwitch from "./generative/generative-menu-switch";
@@ -41,6 +42,7 @@ const TailwindAdvancedEditor = () => {
   const [openColor, setOpenColor] = useState(false);
   const [openLink, setOpenLink] = useState(false);
   const [openAI, setOpenAI] = useState(false);
+  const [openRTL, setOpenRTL] = useState(false);
 
   //Apply Codeblock Highlighting on the HTML from editor.getHTML()
   const highlightCodeblocks = (content: string) => {
@@ -134,6 +136,8 @@ const TailwindAdvancedEditor = () => {
             <TextButtons />
             <Separator orientation="vertical" />
             <ColorSelector open={openColor} onOpenChange={setOpenColor} />
+            <Separator orientation="vertical" />
+            <RTLSelector isOpen={openRTL} setIsOpen={setOpenRTL} />
           </GenerativeMenuSwitch>
         </EditorContent>
       </EditorRoot>

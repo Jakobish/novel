@@ -352,5 +352,102 @@ export const defaultEditorContent = {
         },
       ],
     },
+    { type: "horizontalRule" },
+    {
+      type: "heading",
+      attrs: { level: 3 },
+      content: [{ type: "text", text: "RTL & Hebrew Support" }],
+    },
+    {
+      type: "paragraph",
+      content: [
+        {
+          type: "text",
+          text: "Novel now supports Hebrew and RTL text! Try typing Hebrew text below and watch it automatically switch to RTL direction:",
+        },
+      ],
+    },
+    {
+      type: "paragraph",
+      attrs: { dir: "rtl" },
+      content: [
+        {
+          type: "text",
+          text: "שלום עולם! זהו טקסט בעברית שמוצג מימין לשמאל. הטקסט מתאים אוטומטית לכיוון הנכון.",
+        },
+      ],
+    },
+    {
+      type: "paragraph",
+      content: [
+        {
+          type: "text",
+          text: "You can also mix languages in the same document:",
+        },
+      ],
+    },
+    {
+      type: "paragraph",
+      attrs: { dir: "rtl" },
+      content: [
+        {
+          type: "text",
+          text: "זהו טקסט מעורב: Hello World! וזה ממשיך בעברית.",
+        },
+      ],
+    },
+    {
+      type: "bulletList",
+      content: [
+        {
+          type: "listItem",
+          content: [
+            {
+              type: "paragraph",
+              content: [
+                { type: "text", text: "Automatic RTL detection for Hebrew and Arabic text" },
+              ],
+            },
+          ],
+        },
+        {
+          type: "listItem",
+          content: [
+            {
+              type: "paragraph",
+              content: [
+                { type: "text", text: "Manual direction control with Ctrl+Shift+R" },
+              ],
+            },
+          ],
+        },
+        {
+          type: "listItem",
+          content: [
+            {
+              type: "paragraph",
+              content: [
+                { type: "text", text: "RTL-aware styling for lists, blockquotes, and more" },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: "blockquote",
+      attrs: { dir: "rtl" },
+      content: [
+        {
+          type: "paragraph",
+          content: [
+            {
+              type: "text",
+              text: "זוהי ציטטה בעברית שמוצגת בכיוון RTL עם עיצוב מתאים.",
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
