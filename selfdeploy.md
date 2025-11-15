@@ -238,7 +238,7 @@ Electron allows you to package your web application as a native Mac app.
      // Load the app
      const startUrl = isDev 
        ? 'http://localhost:3000' 
-       : `file://${path.join(__dirname, '../build/index.html')}`;
+       : `file://${path.join(__dirname, '../apps/web/out/index.html')}`;
      
      mainWindow.loadURL(startUrl);
 
