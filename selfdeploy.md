@@ -211,8 +211,7 @@ Electron allows you to package your web application as a native Mac app.
 
 2. **Install Electron:**
    ```bash
-   npm install electron --save-dev
-   npm install electron-builder --save-dev
+   npm install electron electron-is-dev electron-builder --save-dev
    ```
 
 3. **Create main Electron file (`main.js`):**
