@@ -271,7 +271,7 @@ Electron allows you to package your web application as a native Mac app.
        "electron": "electron .",
        "electron-dev": "ELECTRON_IS_DEV=true electron .",
        "build-electron": "electron-builder",
-       "dist": "npm run build && electron-builder"
+       "dist": "(cd .. && pnpm build) && electron-builder"
      },
      "build": {
        "appId": "com.yourname.novel",
