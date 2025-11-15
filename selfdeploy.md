@@ -280,9 +280,9 @@ Electron allows you to package your web application as a native Mac app.
          "output": "dist"
        },
        "files": [
-         "build/**/*",
          "main.js",
-         "package.json"
+         "package.json",
+         "../apps/web/out/**/*"
        ],
        "mac": {
          "category": "public.app-category.productivity",
