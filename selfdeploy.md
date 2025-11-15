@@ -374,7 +374,7 @@ Quick solution using Nativefier:
 npm install -g nativefier
 
 # Create Mac app (after starting your local server)
-nativefier --platform=osx --arch=x64 "http://localhost:3000" "Novel Editor"
+nativefier "http://localhost:3000" "Novel Editor"
 ```
 
 ## Recommended Approach: Electron
